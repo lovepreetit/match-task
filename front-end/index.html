@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Match</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        .img-thumb {
+            width: 50px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <strong>Teams</strong>
+                <table id="teams-table" class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Logo</th>
+                            <th scope="col">Team Name</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="col-md-6 d-none" id="players-table">
+                <strong>Players in <span id="team-name"></span></strong>
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Image</th>
+                            <th scope="col">Last Name</th>
+                            <th scope="col">First Name</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <strong><a href="javascript:void(0);" id="create-fixtures">Create Fixtures</a></strong>
+
+                <table id="fixtures-table" class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">Team 1</th>
+                            <th scope="col">Team 2</th>
+                            <th scope="col">Match Date</th>
+                            <th scope="col">Winning Team</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <strong>Points Table</strong>
+
+                <table id="points-table" class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">Team</th>
+                            <th scope="col">Match Played</th>
+                            <th scope="col">Won</th>
+                            <th scope="col">Lost</th>
+                            <th scope="col">Tie</th>
+                            <th scope="col">Points</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
